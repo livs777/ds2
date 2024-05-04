@@ -28,7 +28,7 @@
         <div class="row" >
             <div class="col-sm-12">
                 <label>Endereço</label>
-                <input type="text" id="logradouro" />
+                <input type="text" id="endereco" />
             </div>
         </div>
 
@@ -45,19 +45,26 @@
 
         <div class="row" >
             <div class="col-sm-12">
-                <label>UF</label>
-                <input type="text" id="uf" />
+                <label>Cidade</label>
+                <input type="text" id="cidade" />
             </div>
         </div>
-        
+
         <br>
 
         <div class="row" >
             <div class="col-sm-12">
-                <button id="botao" class="btn btn-primary">
-                    Consultar
-                </button>
+                <label>Numero</label>
+                <input type="text" id="numero" />
+            </div>
+        </div>
 
+        <br>
+
+        <div class="row" >
+            <div class="col-sm-12">
+                <label>Estado</label>
+                <input type="text" id="estado" />
             </div>
         </div>
 
@@ -66,7 +73,7 @@
         <div class="row" >
             <div class="col-sm-12">
                 <label>Nome</label>
-                <input type="text" id="Nome" />
+                <input type="text" id="nome" />
             </div>
         </div>
 
@@ -75,7 +82,7 @@
         <div class="row" >
             <div class="col-sm-12">
                 <label>Documento</label>
-                <input type="text" id="Documento" />
+                <input type="text" id="documento" />
             </div>
         </div>
 
@@ -84,10 +91,11 @@
         <div class="row" >
             <div class="col-sm-12">
                 <label>Celular</label>
-                <input type="text" id="Celular" />
+                <input type="text" id="celular" />
             </div>
         </div>
 
+    
         <BR>
 
             <div class="row" >
@@ -98,12 +106,45 @@
                 </div>
             </div>
 
+            <br><br>
+
+            <div class="row" >
+                <div class="col-sm-12">
+                    <button id="botao" class="btn btn-primary">
+                        Consultar
+                    </button>
+    
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="row" >
+                <div class="col-sm-12">
+                    <button class="btn btn-success" onclick="lerclientes()">
+                        ver dados
+                    </button>
+                </div>
+            </div>
+            <br><br>
             
-            
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Celular</th>
+                    </tr>
+                </thead>
+
+                <tbody id="corpotabela"></tbody>
+            </table>
 
         <script src="js/bootstrap.bundle.js"></script>
         
         <script src="js/index.js"></script>
+        <script src="js/Api.js"></script>
+        <script src="js/lerclientes.js"></script>
 
 
     </body>
